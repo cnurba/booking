@@ -5,9 +5,14 @@ import 'package:postgres/postgres.dart';
 
 Future<Response> onRequest(RequestContext context) async {
   return switch (context.request.method) {
+    HttpMethod.get => _getUserww(context),
     HttpMethod.post => _getUser(context),
     _ => Future.value(Response(statusCode: HttpStatus.methodNotAllowed))
   };
+}
+
+Future<Response> _getUserww(RequestContext context) async {
+  return Response(body: "Сервер работает");
 }
 
 Future<Response> _getUser(RequestContext context) async {
