@@ -7,7 +7,9 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  crypto: ^3.0.3
   dart_frog: ^1.0.0
+  dart_frog_auth: ^1.1.0
   dotenv: ^4.2.0
   either_dart: ^1.0.0
   equatable: ^2.0.5

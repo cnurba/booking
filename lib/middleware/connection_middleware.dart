@@ -7,7 +7,7 @@ Handler connectionMiddleware(Handler handler) {
     final _endpoint = Endpoint(
       host: 'localhost',
       database: 'booking',
-      port: 5433,
+      port: 5432,
       password: "7861",
       username: "postgres",
     );
