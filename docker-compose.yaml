@@ -3,7 +3,9 @@ version: '3.9'
 services:
   app:
     build: .
-
+    ports:
+      - 13000:3000
+  
   db:
     image: postgres
     restart: always
@@ -25,4 +27,4 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8080:8080
+      - 5433:5432
